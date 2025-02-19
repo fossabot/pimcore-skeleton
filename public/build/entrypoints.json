@@ -2,28 +2,30 @@
   "entrypoints": {
     "js/app": {
       "js": [
-        "/build/runtime.e6617c99.js",
-        "/build/325.c765b9c5.js",
-        "/build/js/app.85c7066b.js"
+        "/build/runtime.js",
+        "/build/vendors-node_modules_fontsource_open-sans_400_css-node_modules_fontsource_open-sans_700_css-n-d08be8.js",
+        "/build/js/app.js"
       ],
       "css": [
-        "/build/js/app.d2feb06e.css"
+        "/build/vendors-node_modules_fontsource_open-sans_400_css-node_modules_fontsource_open-sans_700_css-n-d08be8.css",
+        "/build/js/app.css"
       ]
     },
     "css/email": {
       "js": [
-        "/build/runtime.e6617c99.js"
+        "/build/runtime.js"
       ],
       "css": [
-        "/build/css/email.677a2af3.css"
+        "/build/vendors-node_modules_fontsource_open-sans_400_css-node_modules_fontsource_open-sans_700_css.css",
+        "/build/css/email.css"
       ]
     },
     "css/editmode": {
       "js": [
-        "/build/runtime.e6617c99.js"
+        "/build/runtime.js"
       ],
       "css": [
-        "/build/css/editmode.690923de.css"
+        "/build/css/editmode.css"
       ]
     }
   }

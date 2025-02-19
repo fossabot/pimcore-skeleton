@@ -1,0 +1,60 @@
+<?php
+
+namespace Pimcore\Model\DataObject\Post;
+
+use Pimcore\Model;
+use Pimcore\Model\DataObject;
+
+/**
+ * @method DataObject\Post|false current()
+ * @method DataObject\Post[] load()
+ * @method DataObject\Post[] getData()
+ * @method DataObject\Post[] getObjects()
+ */
+
+class Listing extends DataObject\Listing\Concrete
+{
+protected $classId = "post";
+protected $className = "Post";
+
+
+/**
+* Filter by title (Title)
+* @param string|int|float|array|Model\Element\ElementInterface $data  comparison data, can be scalar or array (if operator is e.g. "IN (?)")
+* @param string $operator  SQL comparison operator, e.g. =, <, >= etc. You can use "?" as placeholder, e.g. "IN (?)"
+* @return $this
+*/
+public function filterByTitle ($data, $operator = '='): static
+{
+	$this->getClass()->getFieldDefinition("title")->addListingFilter($this, $data, $operator);
+	return $this;
+}
+
+/**
+* Filter by content (Content)
+* @param string|int|float|array|Model\Element\ElementInterface $data  comparison data, can be scalar or array (if operator is e.g. "IN (?)")
+* @param string $operator  SQL comparison operator, e.g. =, <, >= etc. You can use "?" as placeholder, e.g. "IN (?)"
+* @return $this
+*/
+public function filterByContent ($data, $operator = '='): static
+{
+	$this->getClass()->getFieldDefinition("content")->addListingFilter($this, $data, $operator);
+	return $this;
+}
+
+/**
+* Filter by blog (Blog)
+* @param mixed $data
+* @param string $operator SQL comparison operator, e.g. =, <, >= etc. You can use "?" as placeholder, e.g. "IN (?)"
+* @return $this
+*/
+public function filterByBlog ($data, $operator = '='): static
+{
+	$this->getClass()->getFieldDefinition("blog")->addListingFilter($this, $data, $operator);
+	return $this;
+}
+
+
+
+}
+

@@ -1,0 +1,144 @@
+<?php
+
+/**
+ * Inheritance: no
+ * Variants: no
+ *
+ * Fields Summary:
+ * - title [input]
+ * - content [wysiwyg]
+ * - blog [reverseObjectRelation]
+ */
+
+namespace Pimcore\Model\DataObject;
+
+use Pimcore\Model\DataObject\Exception\InheritanceParentNotFoundException;
+use Pimcore\Model\DataObject\PreGetValueHookInterface;
+
+/**
+* @method static \Pimcore\Model\DataObject\Post\Listing getList(array $config = [])
+* @method static \Pimcore\Model\DataObject\Post\Listing|\Pimcore\Model\DataObject\Post|null getByTitle(mixed $value, ?int $limit = null, int $offset = 0, ?array $objectTypes = null)
+* @method static \Pimcore\Model\DataObject\Post\Listing|\Pimcore\Model\DataObject\Post|null getByContent(mixed $value, ?int $limit = null, int $offset = 0, ?array $objectTypes = null)
+* @method static \Pimcore\Model\DataObject\Post\Listing|\Pimcore\Model\DataObject\Post|null getByBlog(mixed $value, ?int $limit = null, int $offset = 0, ?array $objectTypes = null)
+*/
+
+class Post extends Concrete
+{
+public const FIELD_TITLE = 'title';
+public const FIELD_CONTENT = 'content';
+public const FIELD_BLOG = 'blog';
+
+protected $classId = "post";
+protected $className = "Post";
+protected $title;
+protected $content;
+
+
+/**
+* @param array $values
+* @return static
+*/
+public static function create(array $values = []): static
+{
+	$object = new static();
+	$object->setValues($values);
+	return $object;
+}
+
+/**
+* Get title - Title
+* @return string|null
+*/
+public function getTitle(): ?string
+{
+	if ($this instanceof PreGetValueHookInterface && !\Pimcore::inAdmin()) {
+		$preValue = $this->preGetValue("title");
+		if ($preValue !== null) {
+			return $preValue;
+		}
+	}
+
+	$data = $this->title;
+
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		return $data->getPlain();
+	}
+
+	return $data;
+}
+
+/**
+* Set title - Title
+* @param string|null $title
+* @return $this
+*/
+public function setTitle(?string $title): static
+{
+	$this->markFieldDirty("title", true);
+
+	$this->title = $title;
+
+	return $this;
+}
+
+/**
+* Get content - Content
+* @return string|null
+*/
+public function getContent(): ?string
+{
+	if ($this instanceof PreGetValueHookInterface && !\Pimcore::inAdmin()) {
+		$preValue = $this->preGetValue("content");
+		if ($preValue !== null) {
+			return $preValue;
+		}
+	}
+
+	$data = $this->getClass()->getFieldDefinition("content")->preGetData($this);
+
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		return $data->getPlain();
+	}
+
+	return $data;
+}
+
+/**
+* Set content - Content
+* @param string|null $content
+* @return $this
+*/
+public function setContent(?string $content): static
+{
+	$this->markFieldDirty("content", true);
+
+	$this->content = $content;
+
+	return $this;
+}
+
+/**
+* Get blog - Blog
+* @return \Pimcore\Model\DataObject\AbstractObject[]
+*/
+public function getBlog(): array
+{
+	if ($this instanceof PreGetValueHookInterface && !\Pimcore::inAdmin()) {
+		$preValue = $this->preGetValue("blog");
+		if ($preValue !== null) {
+			return $preValue;
+		}
+	}
+
+	$data = $this->getClass()->getFieldDefinition("blog")->preGetData($this);
+
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		return $data->getPlain();
+	}
+
+	return $data;
+}
+
+}
+
+

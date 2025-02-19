@@ -14,8 +14,8 @@
         <api>
             <source dsn=".">
                 <path>src</path>
-                <path>app</path>
                 <path>vendor</path>
+                <path>var/classes</path>
             </source>
             <include-source>true</include-source>
             <markers>
@@ -24,8 +24,8 @@
             </markers>
             <ignore>
                 <path>vendor/**/*</path>
-                <path>var/**/*</path>
                 <path>public/**/*</path>
+                <path>var/cache/**/*</path>
             </ignore>
             <extensions>
                 <extension>php</extension>

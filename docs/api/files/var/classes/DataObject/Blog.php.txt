@@ -1,0 +1,126 @@
+<?php
+
+/**
+ * Inheritance: no
+ * Variants: no
+ *
+ * Fields Summary:
+ * - title [input]
+ * - posts [advancedManyToManyObjectRelation]
+ */
+
+namespace Pimcore\Model\DataObject;
+
+use Pimcore\Model\DataObject\Exception\InheritanceParentNotFoundException;
+use Pimcore\Model\DataObject\PreGetValueHookInterface;
+
+/**
+* @method static \Pimcore\Model\DataObject\Blog\Listing getList(array $config = [])
+* @method static \Pimcore\Model\DataObject\Blog\Listing|\Pimcore\Model\DataObject\Blog|null getByTitle(mixed $value, ?int $limit = null, int $offset = 0, ?array $objectTypes = null)
+* @method static \Pimcore\Model\DataObject\Blog\Listing|\Pimcore\Model\DataObject\Blog|null getByPosts(mixed $value, ?int $limit = null, int $offset = 0, ?array $objectTypes = null)
+*/
+
+class Blog extends Concrete
+{
+public const FIELD_TITLE = 'title';
+public const FIELD_POSTS = 'posts';
+
+protected $classId = "blog";
+protected $className = "Blog";
+protected $title;
+protected $posts;
+
+
+/**
+* @param array $values
+* @return static
+*/
+public static function create(array $values = []): static
+{
+	$object = new static();
+	$object->setValues($values);
+	return $object;
+}
+
+/**
+* Get title - Title
+* @return string|null
+*/
+public function getTitle(): ?string
+{
+	if ($this instanceof PreGetValueHookInterface && !\Pimcore::inAdmin()) {
+		$preValue = $this->preGetValue("title");
+		if ($preValue !== null) {
+			return $preValue;
+		}
+	}
+
+	$data = $this->title;
+
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		return $data->getPlain();
+	}
+
+	return $data;
+}
+
+/**
+* Set title - Title
+* @param string|null $title
+* @return $this
+*/
+public function setTitle(?string $title): static
+{
+	$this->markFieldDirty("title", true);
+
+	$this->title = $title;
+
+	return $this;
+}
+
+/**
+* Get posts - Posts
+* @return \Pimcore\Model\DataObject\Data\ObjectMetadata[]
+*/
+public function getPosts(): array
+{
+	if ($this instanceof PreGetValueHookInterface && !\Pimcore::inAdmin()) {
+		$preValue = $this->preGetValue("posts");
+		if ($preValue !== null) {
+			return $preValue;
+		}
+	}
+
+	$data = $this->getClass()->getFieldDefinition("posts")->preGetData($this);
+
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		return $data->getPlain();
+	}
+
+	return $data;
+}
+
+/**
+* Set posts - Posts
+* @param \Pimcore\Model\DataObject\Data\ObjectMetadata[] $posts
+* @return $this
+*/
+public function setPosts(?array $posts): static
+{
+	/** @var \Pimcore\Model\DataObject\ClassDefinition\Data\AdvancedManyToManyObjectRelation $fd */
+	$fd = $this->getClass()->getFieldDefinition("posts");
+	$hideUnpublished = \Pimcore\Model\DataObject\Concrete::getHideUnpublished();
+	\Pimcore\Model\DataObject\Concrete::setHideUnpublished(false);
+	$currentData = $this->getPosts();
+	\Pimcore\Model\DataObject\Concrete::setHideUnpublished($hideUnpublished);
+	$isEqual = $fd->isEqual($currentData, $posts);
+	if (!$isEqual) {
+		$this->markFieldDirty("posts", true);
+	}
+	$this->posts = $fd->preSetData($this, $posts);
+	return $this;
+}
+
+}
+
+

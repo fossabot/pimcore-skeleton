@@ -1,0 +1,14 @@
+pimcore:
+    documents:
+        doc_types:
+            definitions:
+                60a7952d-cefa-4161-9d8f-e82b75ffe30b:
+                    name: 'Teaser Snippet'
+                    group: null
+                    controller: 'ToolboxBundle\Controller\SnippetController::teaserAction'
+                    template: null
+                    type: snippet
+                    priority: 0
+                    creationDate: 1739971782
+                    modificationDate: 1739971790
+                    staticGeneratorEnabled: false

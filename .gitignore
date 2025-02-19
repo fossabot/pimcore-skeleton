@@ -58,3 +58,6 @@
 /install-deploy.php
 /supervisord.conf
 /supervisord.pid
+
+/node_modules/
+/docs/cache/

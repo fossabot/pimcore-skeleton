@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en" id="top-of-site">
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta charset="utf-8"/>
+		<title>
+							My Pimcore 11 Project
+					</title>
+		<meta name="author" content=""/>
+		<meta name="description" content=""/>
+		<base href="../">
+
+		<link href="resources/css/bootstrap.min.css" rel="stylesheet" media="all"/>
+		<link href="resources/css/bootstrap-responsive.min.css" rel="stylesheet" media="all"/>
+		<link href="resources/css/style.css" rel="stylesheet" media="all"/>
+		<link href="resources/css/prism.min.css" rel="stylesheet" media="all"/>
+		<link href="resources/font/css/all.min.css" rel="stylesheet" media="all"/>
+		
+		<link rel="shortcut icon" href="resources/images/favicon.ico"/>
+		<link rel="apple-touch-icon" href="resources/images/apple-touch-icon.png"/>
+		<link rel="apple-touch-icon" sizes="72x72" href="resources/images/apple-touch-icon-72x72.png"/>
+		<link rel="apple-touch-icon" sizes="114x114" href="resources/images/apple-touch-icon-114x114.png"/>
+	</head>
+	<body>
+
+		<nav class="navbar navbar-fixed-top navbar-inverse">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<i class="fa-solid fa-bars"></i>
+					</a>
+					<a class="brand" href="index.html">My Pimcore 11 Project</a>
+
+					<div class="nav-collapse navbar-responsive-collapse collapse">
+						<ul class="nav pull-right">
+															<li class="dropdown" id="api-menu">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-labelledby="api-menu">
+										API Documentation
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="api-menu">
+																					<li><a href="namespaces/app.html"><abbr title="\App">App</abbr></a></li>
+																					<li><a href="namespaces/pimcore.html"><abbr title="\Pimcore">Pimcore</abbr></a></li>
+																			</ul>
+								</li>
+																						<li class="dropdown" id="charts-menu">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-labelledby="charts-menu">
+										Charts
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+										<li>
+											<a href="graphs/class.html">
+												<i class="fa-solid fa-project-diagram"></i>&#160;Class hierarchy diagram
+											</a>
+										</li>
+									</ul>
+								</li>
+														<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									Reports
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+									<li>
+										<a href="reports/errors.html">
+																																																																																																																																																																																																																																																																							<i class="fa-solid fa-bug"></i>&#160;Errors
+											<span class="label label-important pull-right">0</span>
+										</a>
+									</li>
+									<li>
+										<a href="reports/markers.html">
+																																																																																																																																																																																																																																																																							<i class="fa-solid fa-location-dot"></i>&#160;&#160;Markers
+											<span class="label label-warning pull-right">1</span>
+										</a>
+									</li>
+									<li>
+										<a href="reports/deprecated.html">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												<i class="fa-solid fa-file-circle-xmark"></i>&#160;Deprecated
+											<span class="label label-info pull-right">0</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="go_to_top">
+				<a href="#top-of-site" style="color: inherit">Back To Top&#160;&#160;<i class="fa-solid fa-chevron-up"></i></a>
+			</div>
+		</nav>
+
+		<div id="___" class="container-fluid"> 	<section class="row-fluid">
+		<div class="span2 sidebar">
+								<div class="accordion" style="margin-bottom: 0">
+		<div class="accordion-group">
+			<div class="accordion-heading">
+									<a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-448424364"></a>
+								<a href="namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+			</div>
+			<div id="namespace-448424364" class="accordion-body collapse in">
+				<div class="accordion-inner">
+
+													<div class="accordion" style="margin-bottom: 0">
+		<div class="accordion-group">
+			<div class="accordion-heading">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1184354059"></a>
+								<a href="namespaces/app.html" style="margin-left: 30px; padding-left: 0">App</a>
+			</div>
+			<div id="namespace-1184354059" class="accordion-body collapse ">
+				<div class="accordion-inner">
+
+													<div class="accordion" style="margin-bottom: 0">
+		<div class="accordion-group">
+			<div class="accordion-heading">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1316416288"></a>
+								<a href="namespaces/app-controller.html" style="margin-left: 30px; padding-left: 0">Controller</a>
+			</div>
+			<div id="namespace-1316416288" class="accordion-body collapse ">
+				<div class="accordion-inner">
+
+													<div class="accordion" style="margin-bottom: 0">
+		<div class="accordion-group">
+			<div class="accordion-heading">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-879039888"></a>
+								<a href="namespaces/app-controller-admin.html" style="margin-left: 30px; padding-left: 0">Admin</a>
+			</div>
+			<div id="namespace-879039888" class="accordion-body collapse ">
+				<div class="accordion-inner">
+
+					
+					<ul>
+																									<li class="class"><a href="classes/App-Controller-Admin-SettingsController.html"><abbr title="\App\Controller\Admin\SettingsController">SettingsController</abbr></a></li>
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+					
+					<ul>
+																									<li class="class"><a href="classes/App-Controller-BlogController.html"><abbr title="\App\Controller\BlogController">BlogController</abbr></a></li>
+													<li class="class"><a href="classes/App-Controller-DefaultController.html"><abbr title="\App\Controller\DefaultController">DefaultController</abbr></a></li>
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+					
+					<ul>
+																									<li class="class"><a href="classes/App-Kernel.html"><abbr title="\App\Kernel">Kernel</abbr></a></li>
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+													<div class="accordion" style="margin-bottom: 0">
+		<div class="accordion-group">
+			<div class="accordion-heading">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1016325758"></a>
+								<a href="namespaces/pimcore.html" style="margin-left: 30px; padding-left: 0">Pimcore</a>
+			</div>
+			<div id="namespace-1016325758" class="accordion-body collapse ">
+				<div class="accordion-inner">
+
+													<div class="accordion" style="margin-bottom: 0">
+		<div class="accordion-group">
+			<div class="accordion-heading">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1902974245"></a>
+								<a href="namespaces/pimcore-model.html" style="margin-left: 30px; padding-left: 0">Model</a>
+			</div>
+			<div id="namespace-1902974245" class="accordion-body collapse ">
+				<div class="accordion-inner">
+
+													<div class="accordion" style="margin-bottom: 0">
+		<div class="accordion-group">
+			<div class="accordion-heading">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-973115269"></a>
+								<a href="namespaces/pimcore-model-dataobject.html" style="margin-left: 30px; padding-left: 0">DataObject</a>
+			</div>
+			<div id="namespace-973115269" class="accordion-body collapse ">
+				<div class="accordion-inner">
+
+													<div class="accordion" style="margin-bottom: 0">
+		<div class="accordion-group">
+			<div class="accordion-heading">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1191722532"></a>
+								<a href="namespaces/pimcore-model-dataobject-blog.html" style="margin-left: 30px; padding-left: 0">Blog</a>
+			</div>
+			<div id="namespace-1191722532" class="accordion-body collapse ">
+				<div class="accordion-inner">
+
+					
+					<ul>
+																									<li class="class"><a href="classes/Pimcore-Model-DataObject-Blog-Listing.html"><abbr title="\Pimcore\Model\DataObject\Blog\Listing">Listing</abbr></a></li>
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+													<div class="accordion" style="margin-bottom: 0">
+		<div class="accordion-group">
+			<div class="accordion-heading">
+									<a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-617171482"></a>
+								<a href="namespaces/pimcore-model-dataobject-post.html" style="margin-left: 30px; padding-left: 0">Post</a>
+			</div>
+			<div id="namespace-617171482" class="accordion-body collapse ">
+				<div class="accordion-inner">
+
+					
+					<ul>
+																									<li class="class"><a href="classes/Pimcore-Model-DataObject-Post-Listing.html"><abbr title="\Pimcore\Model\DataObject\Post\Listing">Listing</abbr></a></li>
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+					
+					<ul>
+																									<li class="class"><a href="classes/Pimcore-Model-DataObject-Blog.html"><abbr title="\Pimcore\Model\DataObject\Blog">Blog</abbr></a></li>
+													<li class="class"><a href="classes/Pimcore-Model-DataObject-Post.html"><abbr title="\Pimcore\Model\DataObject\Post">Post</abbr></a></li>
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+					
+					<ul>
+																							</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+					
+					<ul>
+																							</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+					
+					<ul>
+																							</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		</div>
+	</section>
+	<section class="row-fluid">
+		<div class="span10 offset2">
+			<div class="row-fluid">
+				<div class="span8 content class">
+					<nav>
+												<a href="namespaces/pimcore-model-dataobject.html"><abbr title="\Pimcore\Model\DataObject">DataObject</abbr></a>
+						<i class="fa-solid fa-turn-up"></i>
+											</nav>
+					
+					<h1>
+						<small>\Pimcore\Model\DataObject</small>
+						Blog</h1>
+					<p>
+						<em></em>
+					</p>
+					
+																																											<section id="summary">
+						<h2>Summary</h2>
+						<section class="row-fluid heading">
+							<section class="span4">
+								<a href="#methods">Methods</a>
+							</section>
+							<section class="span4">
+								<a href="#properties">Properties</a>
+							</section>
+							<section class="span4">
+								<a href="#constants">Constants</a>
+							</section>
+						</section>
+						<section class="row-fluid public">
+							<section class="span4">
+																																																																																																																																																																																																																																																																																																																
+																											<a href="classes/Pimcore-Model-DataObject-Blog.html#method_getList" class="">getList</a><br/>
+																			<a href="classes/Pimcore-Model-DataObject-Blog.html#method_getByTitle" class="">getByTitle</a><br/>
+																			<a href="classes/Pimcore-Model-DataObject-Blog.html#method_getByPosts" class="">getByPosts</a><br/>
+																			<a href="classes/Pimcore-Model-DataObject-Blog.html#method_create" class="">create</a><br/>
+																			<a href="classes/Pimcore-Model-DataObject-Blog.html#method_getTitle" class="">getTitle</a><br/>
+																			<a href="classes/Pimcore-Model-DataObject-Blog.html#method_setTitle" class="">setTitle</a><br/>
+																			<a href="classes/Pimcore-Model-DataObject-Blog.html#method_getPosts" class="">getPosts</a><br/>
+																			<a href="classes/Pimcore-Model-DataObject-Blog.html#method_setPosts" class="">setPosts</a><br/>
+																								</section>
+							<section class="span4">
+																
+																	<em>No public properties found</em>
+															</section>
+							<section class="span4">
+																																																																																								
+																											<a href="classes/Pimcore-Model-DataObject-Blog.html#constant_FIELD_TITLE" class="">FIELD_TITLE</a><br/>
+																			<a href="classes/Pimcore-Model-DataObject-Blog.html#constant_FIELD_POSTS" class="">FIELD_POSTS</a><br/>
+																								</section>
+						</section>
+						<section class="row-fluid protected">
+							<section class="span4">
+																																																																																																																																																								
+																	<em>No protected methods found</em>
+															</section>
+							<section class="span4">
+																
+																	<em>No protected properties found</em>
+															</section>
+							<section class="span4">
+																																																		
+																	<em>No protected constants found</em>
+															</section>
+						</section>
+						<section class="row-fluid private">
+							<section class="span4">
+																																																																																																																																																								
+																	<em>No private methods found</em>
+															</section>
+							<section class="span4">
+																
+																	<em>No private properties found</em>
+															</section>
+							<section class="span4">
+																																																		
+																	<em>No private constants found</em>
+															</section>
+						</section>
+					</section>
+				</div>
+				<aside class="span4 detailsbar">
+										
+					
+					<dl>
+						<dt>File</dt>
+						<dd>
+							<a href="files/var-classes-dataobject-blog.html">
+								<div class="path-wrapper">var/classes/DataObject/Blog.php</div>
+							</a>
+						</dd>
+													<dt>Package</dt>
+							<dd>
+								<div class="namespace-wrapper">Application</div>
+							</dd>
+												<dt>Class hierarchy</dt>
+						<dd class="hierarchy">
+																																																																
+									<div class="namespace-wrapper"><abbr title="\Pimcore\Model\DataObject\Concrete">Concrete</abbr></div>
+																						<div class="namespace-wrapper">\Pimcore\Model\DataObject\Blog</div>
+						</dd>
+
+						
+						
+												
+																																																																																																																																																																																															
+																	</dl>
+					<h2>Tags</h2>
+					<table class="table table-condensed">
+																											<tr>
+									<th>
+										method
+									</th>
+									<td>
+																																
+																																
+																																
+																			</td>
+								</tr>
+															<tr>
+									<th>
+										package
+									</th>
+									<td>
+																																<p>Application</p>
+
+																			</td>
+								</tr>
+															<tr>
+									<th>
+										uses
+									</th>
+									<td>
+																			</td>
+								</tr>
+															<tr>
+									<th>
+										property
+									</th>
+									<td>
+																			</td>
+								</tr>
+															<tr>
+									<th>
+										property-read
+									</th>
+									<td>
+																			</td>
+								</tr>
+															<tr>
+									<th>
+										property-write
+									</th>
+									<td>
+																			</td>
+								</tr>
+																		</table>
+				</aside>
+			</div>
+
+										<a id="constants" name="constants"></a>
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<h2>Constant</h2>
+					</div>
+					<aside class="span4 detailsbar"></aside>
+				</div>
+
+															    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_FIELD_TITLE" name="constant_FIELD_TITLE" class="anchor"></a>
+            <article id="constant_FIELD_TITLE" class="constant">
+                <h3 class="public ">FIELD_TITLE</h3>
+                <pre class="signature">FIELD_TITLE = &#039;title&#039;</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="fas-solid fa-arrow-down"></i></h1>
+                        <dl>
+                                
+                                                                                
+                                                            </dl>
+
+                        <h2>Tags</h2>
+            <table class="table table-condensed">
+                                                                                            <tr>
+                            <th>
+                                attributes
+                            </th>
+                            <td>
+                                                            </td>
+                        </tr>
+                                                </table>
+        </aside>
+    </div>
+
+																				    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_FIELD_POSTS" name="constant_FIELD_POSTS" class="anchor"></a>
+            <article id="constant_FIELD_POSTS" class="constant">
+                <h3 class="public ">FIELD_POSTS</h3>
+                <pre class="signature">FIELD_POSTS = &#039;posts&#039;</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="fas-solid fa-arrow-down"></i></h1>
+                        <dl>
+                                
+                                                                                
+                                                            </dl>
+
+                        <h2>Tags</h2>
+            <table class="table table-condensed">
+                                                                                            <tr>
+                            <th>
+                                attributes
+                            </th>
+                            <td>
+                                                            </td>
+                        </tr>
+                                                </table>
+        </aside>
+    </div>
+
+									
+																						
+																									
+						
+										<a id="methods" name="methods"></a>
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<h2>Methods</h2>
+					</div>
+					<aside class="span4 detailsbar"></aside>
+				</div>
+
+															    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getList" name="method_getList" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getList()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="fa-solid fa-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getList(array  <span class="argument">$config =  = &#039;[]&#039;</span>) : \Pimcore\Model\DataObject\Blog\Listing</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>array</td>
+                                <td>$config </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    \Pimcore\Model\DataObject\Blog\Listing
+                                            &mdash; 
+                                                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="fas fa-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="classes/Pimcore-Model-DataObject-Blog.html"><div class="path-wrapper">\Pimcore\Model\DataObject\Blog</div></a></dd>
+                                                                                                
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+																				    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getByTitle" name="method_getByTitle" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getByTitle()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="fa-solid fa-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getByTitle(mixed  <span class="argument">$value</span>, ?int  <span class="argument">$limit =  = &#039;null&#039;</span>, int  <span class="argument">$offset =  = &#039;0&#039;</span>, ?array  <span class="argument">$objectTypes =  = &#039;null&#039;</span>) : \Pimcore\Model\DataObject\Blog\Listing|\Pimcore\Model\DataObject\Blog|null</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>mixed</td>
+                                <td>$value </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>?int</td>
+                                <td>$limit </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>int</td>
+                                <td>$offset </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>?array</td>
+                                <td>$objectTypes </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    \Pimcore\Model\DataObject\Blog\Listing|\Pimcore\Model\DataObject\Blog|null
+                                            &mdash; 
+                                                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="fas fa-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="classes/Pimcore-Model-DataObject-Blog.html"><div class="path-wrapper">\Pimcore\Model\DataObject\Blog</div></a></dd>
+                                                                                                
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+																				    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getByPosts" name="method_getByPosts" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getByPosts()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="fa-solid fa-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getByPosts(mixed  <span class="argument">$value</span>, ?int  <span class="argument">$limit =  = &#039;null&#039;</span>, int  <span class="argument">$offset =  = &#039;0&#039;</span>, ?array  <span class="argument">$objectTypes =  = &#039;null&#039;</span>) : \Pimcore\Model\DataObject\Blog\Listing|\Pimcore\Model\DataObject\Blog|null</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>mixed</td>
+                                <td>$value </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>?int</td>
+                                <td>$limit </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>int</td>
+                                <td>$offset </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>?array</td>
+                                <td>$objectTypes </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    \Pimcore\Model\DataObject\Blog\Listing|\Pimcore\Model\DataObject\Blog|null
+                                            &mdash; 
+                                                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="fas fa-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="classes/Pimcore-Model-DataObject-Blog.html"><div class="path-wrapper">\Pimcore\Model\DataObject\Blog</div></a></dd>
+                                                                                                
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+																				    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_create" name="method_create" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">create()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="fa-solid fa-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">create(array  <span class="argument">$values = []</span>) : static</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>array</td>
+                                <td>$values </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    static
+                                            &mdash; 
+                                                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="fas fa-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="classes/Pimcore-Model-DataObject-Blog.html"><div class="path-wrapper">\Pimcore\Model\DataObject\Blog</div></a></dd>
+                                                                                                
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+																				    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getTitle" name="method_getTitle" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getTitle()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="fa-solid fa-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getTitle() : string|null</pre>
+                <p><em>Get title - Title</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string|null
+                                            &mdash; 
+                                                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="fas fa-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="classes/Pimcore-Model-DataObject-Blog.html"><div class="path-wrapper">\Pimcore\Model\DataObject\Blog</div></a></dd>
+                                                                                                
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+																				    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_setTitle" name="method_setTitle" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">setTitle()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="fa-solid fa-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">setTitle(string|null  <span class="argument">$title</span>) : $this</pre>
+                <p><em>Set title - Title</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string|null</td>
+                                <td>$title </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    $this
+                                            &mdash; 
+                                                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="fas fa-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="classes/Pimcore-Model-DataObject-Blog.html"><div class="path-wrapper">\Pimcore\Model\DataObject\Blog</div></a></dd>
+                                                                                                
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+																				    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getPosts" name="method_getPosts" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getPosts()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="fa-solid fa-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getPosts() : \Pimcore\Model\DataObject\Data\ObjectMetadata[]</pre>
+                <p><em>Get posts - Posts</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    \Pimcore\Model\DataObject\Data\ObjectMetadata[]
+                                            &mdash; 
+                                                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="fas fa-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="classes/Pimcore-Model-DataObject-Blog.html"><div class="path-wrapper">\Pimcore\Model\DataObject\Blog</div></a></dd>
+                                                                                                
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+																				    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_setPosts" name="method_setPosts" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">setPosts()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="fa-solid fa-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">setPosts(\Pimcore\Model\DataObject\Data\ObjectMetadata[]  <span class="argument">$posts</span>) : $this</pre>
+                <p><em>Set posts - Posts</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>\Pimcore\Model\DataObject\Data\ObjectMetadata[]</td>
+                                <td>$posts </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    $this
+                                            &mdash; 
+                                                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="fas fa-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="classes/Pimcore-Model-DataObject-Blog.html"><div class="path-wrapper">\Pimcore\Model\DataObject\Blog</div></a></dd>
+                                                                                                
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+																																																																																																																																																																						</div>
+	</section>
+
+	<div id="source-view" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="source-view-label" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="source-view-label">Blog.php</h3>
+		</div>
+		<div class="modal-body">
+			<pre data-src="files/var/classes/DataObject/Blog.php.txt" class="language-php line-numbers"></pre>
+		</div>
+	</div>
+
+			<footer class="row-fluid">
+				<section class="span10 offset2">
+					<section class="row-fluid">
+						<section class="span10 offset1">
+							<section class="row-fluid footer-sections">
+								<section
+									class="span4">
+																		<h1>
+										<i class="fa-solid fa-code"></i>
+									</h1>
+									<div>
+										<ul>
+																							<li><a href="namespaces/app.html"><abbr title="\App">App</abbr></a></li>
+																							<li><a href="namespaces/pimcore.html"><abbr title="\Pimcore">Pimcore</abbr></a></li>
+																					</ul>
+									</div>
+								</section>
+								<section
+									class="span4">
+																		<h1>
+										<i class="fa-solid fa-project-diagram"></i>
+									</h1>
+									<div>
+										<ul>
+											<li><a href="graphs/class.html">Class Hierarchy Diagram</a></li>
+										</ul>
+									</div>
+								</section>
+								<section
+									class="span4">
+																		<h1>
+										<i class="fa-solid fa-thumbtack"></i>
+									</h1>
+									<div>
+										<ul>
+											<li><a href="reports/errors.html">Errors</a></li>
+											<li><a href="reports/markers.html">Markers</a></li>
+										</ul>
+									</div>
+								</section>
+							</section>
+						</section>
+					</section>
+					<section class="row-fluid">
+						<section class="span10 offset1">
+							<hr/>
+							Documentation is powered by
+							<a href="https://www.phpdoc.org/">phpDocumentor
+							</a>
+							and authored
+							                    on
+							February 19th, 2025 at 15:27.
+						</section>
+					</section>
+				</section>
+			</footer>
+		</div>
+		<script src="resources/js/jquery-1.11.0.min.js"></script>
+		<script src="resources/js/ui/1.10.4/jquery-ui.min.js"></script>
+		<script src="resources/js/jquery.smooth-scroll.js"></script>
+		<script src="resources/js/prism.min.js"></script>
+		<script src="resources/js/bootstrap.js"></script>
+		<script src="resources/js/custom.js"></script>
+			</body>
+</html>

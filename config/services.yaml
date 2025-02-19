@@ -3,7 +3,7 @@ imports:
   - { resource: "services/*.yaml" }
 
 parameters:
-  secret: "ThisTokenIsNotSoSecretChangeItImmediately"
+  secret: "8nI6QW1FrBkTHLtbyb7MtCmRqH3kIL/Fj3WjjkSIE3s="
   pimcore_executable_php: "%env(PIMCORE_EXECUTABLE_PHP)%"
 
   mailer_dsn_main: "%env(MAILER_DSN_MAIN)%"
