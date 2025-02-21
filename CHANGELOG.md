@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/dvonrohr/pimcore-skeleton/compare/v1.0.0...v1.0.1) (2025-02-21)
+
+
+### Miscellaneous Chores
+
+* clean up release please ([dd5aa4a](https://github.com/dvonrohr/pimcore-skeleton/commit/dd5aa4ab4e0342411d576da4475d8e3c47d5f914))
+* improve release please gh action ([30eb8e7](https://github.com/dvonrohr/pimcore-skeleton/commit/30eb8e77e4fb0e5dd76cdfe76428aa91dfd471fe))
+
 ## 1.0.0 (2025-02-20)
 
 
